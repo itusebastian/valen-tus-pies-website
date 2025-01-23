@@ -10,13 +10,13 @@
 </head>
 <body class="bg-gray-50">
 
-    <!-- Navbar -->
     <header class="bg-[#7c1231] text-white py-4">
-        <div class="container mx-auto flex items-center px-4">
-            <!-- Logo a la izquierda -->
-            <img src="logo.png" alt="Logo" class="w-16 h-18 object-cover mr-4"> <!-- Ajusta el margen a la derecha del logo -->
-            <h1 class="text-2xl font-bold">Valen tus Pies</h1>
-            <nav class="ml-auto">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <img src="logo.png" alt="Logo" class="w-16 h-16 object-cover">
+    
+            <!-- Menú de navegación -->
+            <nav class="hidden md:flex space-x-4"> <!-- Menú visible solo en pantallas grandes -->
                 <ul class="flex space-x-4">
                     <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
                     <li><a href="#services" class="hover:text-gray-300">Servicios</a></li>
@@ -25,8 +25,40 @@
                     <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
                 </ul>
             </nav>
+    
+            <!-- Botón de menú hamburguesa para móviles -->
+            <div class="md:hidden flex items-center">
+                <button id="burger-btn" class="text-white focus:outline-none">
+                    <!-- Icono de hamburguesa -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Menú desplegable para móviles (oculto por defecto) -->
+        <div id="mobile-menu" class="md:hidden bg-[#7c1231] text-white w-full hidden">
+            <ul class="space-y-4 p-4">
+                <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
+                <li><a href="#services" class="hover:text-gray-300">Servicios</a></li>
+                <li><a href="#about" class="hover:text-gray-300">Sobre Nosotros</a></li>
+                <li><a href="#team" class="hover:text-gray-300">Equipo</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
+            </ul>
         </div>
     </header>
+
+    <script>
+        // JavaScript para abrir y cerrar el menú hamburguesa
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        burgerBtn.addEventListener('click', () => {
+            // Alternar la visibilidad del menú móvil
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Hero Section -->
 <section class="bg-[#fefeff] text-center py-16">
