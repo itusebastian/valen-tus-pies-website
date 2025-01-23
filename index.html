@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Valen tus Pies - Consultorio Podológico</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
 
     <!-- Navbar -->
-    <header class="bg-[#7c0e33] text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
+    <header class="bg-[#7c1231] text-white py-4">
+        <div class="container mx-auto flex items-center px-4">
+            <!-- Logo a la izquierda -->
+            <img src="logo.png" alt="Logo" class="w-16 h-18 object-cover mr-4"> <!-- Ajusta el margen a la derecha del logo -->
             <h1 class="text-2xl font-bold">Valen tus Pies</h1>
-            <nav>
+            <nav class="ml-auto">
                 <ul class="flex space-x-4">
                     <li><a href="#" class="hover:text-gray-300">Inicio</a></li>
                     <li><a href="#services" class="hover:text-gray-300">Servicios</a></li>
                     <li><a href="#about" class="hover:text-gray-300">Sobre Nosotros</a></li>
+                    <li><a href="#team" class="hover:text-gray-300">Equipo</a></li>
                     <li><a href="#contact" class="hover:text-gray-300">Contacto</a></li>
                 </ul>
             </nav>
@@ -25,67 +29,137 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-[#fefeff] text-center py-16" style="background-color: #fefeff;">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-[#7c0e33]">¡Cuidamos tus pies con dedicación!</h2>
-            <p class="mt-4 text-lg text-gray-600">En <span class="font-bold">Valen tus Pies</span>, ofrecemos soluciones podológicas profesionales para mejorar tu salud y bienestar.</p>
-            <a href="#contact" class="mt-6 inline-block bg-[#7c0e33] text-white px-6 py-3 rounded-full text-lg hover:bg-[#5e0b26]">Contáctanos</a>
+<section class="bg-[#fefeff] text-center py-16">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Texto a la izquierda -->
+        <div class="w-full md:w-1/2 text-left">
+            <h2 class="text-4xl font-bold text-[#7c1231] mb-8">Especialistas en Pacientes Pediátricos</h2>
+            <p class="mt-4 text-lg text-gray-600 ">En <span class="font-bold">Valen tus Pies</span>, ofrecemos atención especializada para el cuidado podológico de los más pequeños.</p>
+            <div class="mt-6">
+                <img src="logo-red.png" alt="Logo" class="w-40 h-50 object-cover mx-auto mt-10"> 
+            </div>
         </div>
-    </section>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+            <img src="pediatricos.png" alt="Especialistas en Pacientes Pediátricos" class="w-full h-auto rounded-lg shadow-lg"> 
+        </div>
+    </div>
+</section>
 
     <!-- Services Section -->
     <section id="services" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center text-[#7c0e33]">Nuestros Servicios</h3>
+            <h3 class="text-3xl font-bold text-center text-[#7c1231]">Nuestros Servicios</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                 <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h4 class="text-xl font-semibold text-[#7c0e33]">Evaluación Podológica</h4>
-                    <p class="mt-2 text-gray-600">Realizamos exámenes detallados para identificar problemas en los pies.</p>
+                    <i class="fas fa-cut text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de tijeras -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Corte Clínico</h4>
+                    <p class="mt-2 text-gray-600">Un corte correcto evita problemas de crecimiento en las uñas y molestias futuras.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h4 class="text-xl font-semibold text-[#7c0e33]">Tratamientos Especializados</h4>
-                    <p class="mt-2 text-gray-600">Ofrecemos tratamientos para hongos, callosidades, y más.</p>
+                    <i class="fas fa-paw text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de pata -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Limpieza de Callosidades</h4>
+                    <p class="mt-2 text-gray-600">Eliminamos capas de piel que causan presión y deformaciones anatómicas.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <h4 class="text-xl font-semibold text-[#7c0e33]">Cuidados Preventivos</h4>
-                    <p class="mt-2 text-gray-600">Te asesoramos para mantener la salud de tus pies a largo plazo.</p>
+                    <i class="fas fa-virus text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de virus -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Tratamiento de Hongos</h4>
+                    <p class="mt-2 text-gray-600">Ofrecemos soluciones eficaces para onicomicosis y otras infecciones.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-microscope text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de microscopio -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Verrugas Plantares</h4>
+                    <p class="mt-2 text-gray-600">Identificamos y tratamos a tiempo estas lesiones para evitar complicaciones.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-stethoscope text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de estetoscopio -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Diagnóstico Integral</h4>
+                    <p class="mt-2 text-gray-600">Realizamos diagnósticos precisos para tratamientos efectivos y preventivos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <i class="fas fa-hand-holding-medical text-4xl text-[#7c1231] mb-4"></i> <!-- Icono de mano médica -->
+                    <h4 class="text-xl font-semibold text-[#7c1231] mt-2">Procedimientos sin Dolor</h4>
+                    <p class="mt-2 text-gray-600">Nuestra técnica profesional garantiza alivio inmediato sin molestias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-[#7c1231]">Sobre Nosotros</h3>
+            <p class="mt-6 text-lg text-center text-gray-600 max-w-3xl mx-auto">
+                En <span class="font-bold">Valen tus Pies</span>, nuestra misión es contribuir al bienestar de la sociedad mediante servicios podológicos de alta calidad, enfocados en la prevención, el diagnóstico preciso y el cuidado integral de los pies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center text-[#7c1231]">Nuestro Equipo</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="text-center">
+                    <img src="valentin.png" alt="Pdlg. Hugo Valentín" class="mx-auto w-32 h-32 object-cover rounded-full">
+                    <h4 class="text-xl font-semibold text-[#7c1231]">Pdlg. Hugo Valentín</h4>
+                    <p class="mt-2 text-gray-600">Especialista en cuidado integral del pie y procedimientos avanzados.</p>
+                </div>
+                <div class="text-center">
+                    <img src="shely.png" alt="Pdlg. Sheyla Ortega" class="mx-auto w-32 h-32 object-cover rounded-full">
+                    <h4 class="text-xl font-semibold text-[#7c1231]">Pdlga. Sheyla Ortega</h4>
+                    <p class="mt-2 text-gray-600">Experta en diagnóstico preventivo y tratamientos pediátricos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-16 bg-white">
+    <!-- Statistics Section -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center text-[#7c0e33]">Sobre Nosotros</h3>
+            <h3 class="text-3xl font-bold text-center text-[#7c1231]">Datos Estadísticos</h3>
             <p class="mt-6 text-lg text-center text-gray-600 max-w-3xl mx-auto">
-                En <span class="font-bold">Valen tus Pies</span>, contamos con profesionales certificados y años de experiencia en el cuidado podológico. Nos especializamos en brindar un servicio personalizado que mejora la calidad de vida de nuestros pacientes.
+                Sabemos que ciertos grupos requieren mayor atención, como personas mayores y pacientes diabéticos. Trabajamos para prevenir complicaciones y mejorar la salud de nuestros pacientes.
             </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 text-center">
+                <div>
+                    <h4 class="text-2xl font-bold text-[#7c1231]">43.9%</h4>
+                    <p class="text-gray-600">Mujeres</p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-[#7c1231]">17.5%</h4>
+                    <p class="text-gray-600">Geriátricos</p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-bold text-[#7c1231]">8.8%</h4>
+                    <p class="text-gray-600">Diabéticos</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center text-[#7c0e33]">Contáctanos</h3>
+            <h3 class="text-3xl font-bold text-center text-[#7c1231]">Contáctanos</h3>
             <div class="mt-8 text-center">
                 <p class="text-xl text-gray-700">
                     <span class="font-bold">Dirección:</span> Centro Plaza Modena, local 2 PB Av. Circunvalación, y, Quito 170901
                 </p>
                 <p class="text-xl text-gray-700 mt-4">
-                    <span class="font-bold">Teléfono:</span> <a href="tel:0963649499" class="text-[#7c0e33] hover:underline">0963649499</a>
+                    <span class="font-bold">Teléfono:</span> <a href="tel:0963649499" class="text-[#7c1231] hover:underline">0963649499</a>
                 </p>
                 <div class="mt-6">
-                    <a href="tel:0963649499" class="inline-block bg-[#7c0e33] text-white px-6 py-3 rounded-full text-lg hover:bg-[#5e0b26]">Llamar ahora</a>
+                    <a href="tel:0963649499" class="inline-block bg-[#7c1231] text-white px-6 py-3 rounded-full text-lg hover:bg-[#5e0b26]">Llamar ahora</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#7c0e33] text-white py-4">
+    <footer class="bg-[#7c1231] text-white py-4">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Valen tus Pies. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Valen tus Pies. Todos los derechos reservados.</p>
         </div>
     </footer>
 
